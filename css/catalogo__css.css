@@ -1,0 +1,605 @@
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+
+.grid{
+
+    display: grid;
+    grid-template-columns: 50px 300px;
+    grid-template-rows: 200px 75px;
+
+}
+
+body{
+    font-family: 'Open Sans', 
+    sans-serif;
+}
+
+
+/* ---------------------------------------------------------------*/
+
+/* -----  --------   -------  TITULO   -------  --------  ------*/
+
+/* ------------------------------------------------------------*/
+
+
+.marca{
+    text-align: center;
+    color: white;
+    padding: 15px 10px;
+    font-size: 12px;
+}
+
+.marca h1{
+    padding-right: 4px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#imagen_logo {
+    width: 160px;
+    height: 45px;
+    float: left;
+    padding-left: 20px;
+    padding-right: 16px;
+    padding-top: 2px;
+}
+
+
+.marca {
+    margin: auto;
+    background-color: #ffa837;
+    clear: both;
+    display: block;
+    content: '';
+   
+}
+
+.marca h1 {
+
+    font-size: 70px;
+    line-height: 230px;
+
+}
+
+.marca h1 i {
+
+    font-weight: bold;
+
+}
+
+
+/* ---------------------------------------------------------------------*/
+
+/* --------------------------  NAVEGADOR   ----------------------------*/
+
+/* --------------------------------------------------------------------*/
+
+
+.navegador{
+    float: left;
+    width: 100%;
+    background-color: rgb(255, 152, 93);
+    color: white;
+    transition: .3s ease all;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+
+}
+
+.navegador .wrap {
+    position: relative;
+    left: -196px;
+    transition: 0.4s ease all;
+
+}
+
+
+nav{
+    font-size: 12px;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+
+}
+
+nav li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    
+}
+
+nav a{
+    display: block;
+    padding: 15px;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+    transition: 0.2 ease all;
+}
+
+
+body nav ul li a:hover{
+    color:rgb(255, 152, 93);
+    background-color:rgb(255, 255, 255);
+    transition: all 0.5s ease 0s;
+}
+
+body.nav_fixed .navegador {
+
+    position: fixed;
+    position: 0;
+    z-index:1000;
+    top:0;
+    width: 100%;
+    
+}
+
+body.nav_fixed .navegador .wrap{
+
+    left: 0;
+    
+}
+
+.navegador .wrap2 {
+    position: relative;
+    left: 0;
+    transition: 0.4s ease all;
+
+}
+
+body.nav_fixed2 .navegador {
+
+    position: fixed;
+    position: 0;
+    z-index:1000;
+    top:0;
+    width: 100%;
+    
+}
+
+body.nav_fixed2 .navegador .wrap2{
+
+    left: 196px;
+    
+}
+
+/* ---------------------------------------------------------------*/
+
+/* -----  --------   -------  CONTENIDO   -------  --------  ------*/
+
+/* ------------------------------------------------------------*/
+
+html{
+    background-color: rgb(250, 248, 242, 0.5);
+}
+
+.contenedor .contenedor_ventas .producto1{
+    display: block;
+    align-items: center;
+    text-align: center;
+    border:5px solid  #ffa837;
+    margin-left: 35%;
+    margin-right: 35%;
+    
+}
+
+.parrafo1{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.titulo{
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 25px;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.producto_titulo1{
+    margin-top: 20px;
+}
+
+.producto1_buton{
+    background:  rgb(212, 107, 9);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.07em;
+    margin-right: 1.25em;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+    margin-left: 25px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.producto1_buton:hover {
+
+    background:rgba(4, 158, 11, 0.753);
+    color: black;
+}
+
+
+
+.margen1{
+    background: url(../IMAGENES/mouse..jpg) ;
+    max-height: 100%;
+    background-size: cover;
+    max-width: 100%;
+    width: 400px;
+    height: 400px;
+    background-position:center center;
+
+}
+
+.margen2{
+    background: url(https://phantom.pe/pub/media/catalog/product/cache/71a032b60710d907b279b6023a79a12b/_/r/_razer_blackwidow_v3_tenkeyless_chroma_black_1.jpg)  ;
+    max-height: 100%;
+    background-size: cover;
+    max-width: 100%;
+    width: 400px;
+    height: 400px;
+    background-position:center center;
+    
+}
+
+.margen3{
+    background: url(https://helprint.cl/wp-content/uploads/2020/07/PC-Gamer.png) ;
+    max-height: 100%;
+    background-size: cover;
+    max-width: 100%;
+    width: 400x;
+    height: 400px;
+    background-position:center center;
+
+}
+
+.margen4{
+    background: url(https://images-na.ssl-images-amazon.com/images/I/61yEI8OjDKL._AC_SY450_.jpg) ;
+    max-height: 100%;
+    background-size: cover;
+    max-width: 100%;
+    width: 400px;
+    height: 400px;
+    background-position:center center;
+
+}
+
+.margen5{
+    background: url(../IMAGENES/tekken.png)  ;
+    max-height: 100%;
+    background-size: cover;
+    max-width: 100%;
+    width: 382px;
+    height: 200px;
+    background-position:center center;
+    
+}
+
+.margen6{
+    background: url(../IMAGENES/kof.png)  ;
+    max-height: 100%;
+    background-size: cover;
+    max-width: 100%;
+    width: 382px;
+    height: 200px;
+    background-position:center center;
+    
+} 
+
+.margen7{
+    background: url(../IMAGENES/Elden.png)  ;
+    max-height: 100%;
+    background-size: cover;
+    max-width: 100%;
+    width: 382px;
+    height: 200px;
+    background-position:center center;
+    
+} 
+
+.margen8{
+    background: url(../IMAGENES/wow.png)  ;
+    max-height: 100%;
+    background-size: cover;
+    max-width: 100%;
+    width: 382px;
+    height: 200px;
+    background-position:center center;
+    
+} 
+
+.contenedor_ventasuwu{
+    display: flex;
+    
+}
+
+.producto_titulo2, 
+.descrip{
+    margin: 20px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.uwu{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.ewe{
+    
+    background:  rgb(212, 107, 9);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.07em;
+    margin-right: 1.25em;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+    margin-left: 25px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 170px;
+}
+
+.ewe:hover {
+
+    background:rgba(4, 158, 11, 0.753);
+    color: black;
+}
+
+.contenedor_ventas2{
+    border:5px solid  #ffa837;
+    margin-top: 30px;
+    margin-left: 3px;
+    margin-bottom: 30px;
+}
+
+.titulo h2{
+
+    margin-left: 650px;
+    margin-right: 650px;
+    border: 1px solid #ffa837;
+    font-size: 50px;
+    background-color: orange;
+}
+.ventas_texto{
+    margin-top: 20px;
+    font-size: 50px;
+
+}
+
+
+.text__busqueda input {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    background: #F2F2F2;
+    font-size: 16px;
+    outline: none;
+    width:400px;
+    height: 20px;
+
+}
+
+
+/* -----------------------------------------------------------------------*/
+
+/* -----------------------------  FOOTER   ------------------------------*/
+
+/* --------------------------------------------------------------------*/
+
+
+footer{
+    width: 100%;
+    background: #202020;
+    color: white;   
+    margin-top: 20px;
+    
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.colum1{
+    max-width: 400px;
+}
+
+.colum1 h1{
+    font-size: 22px;
+}
+
+.colum1 p{
+    font-size: 14px;
+    color: #C7C7C7;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.colum2{
+    max-width: 400px;
+    
+}
+
+.colum2 h1{
+    font-size: 22px;
+}
+
+.row{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row img{
+    width: 36px;
+    height: 36px;
+}
+
+.row label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #C7C7C7;
+}
+
+.colum3{
+    max-width: 400px;
+}
+
+.colum3 h1{
+    font-size: 22px;
+}
+
+.row2{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row2 img{
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+.container-footer{
+    width: 100%;  
+    background: #101010;
+}
+
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;  
+    padding: 20px;
+}
+
+.copyright{
+    color: #C7C7C7;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.information a{
+    text-decoration: none;
+    color: #C7C7C7;
+}
+
+.text__busqueda input {
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    border: none;
+    background: #F2F2F2;
+    font-size: 19px;
+    outline: none;
+    width:400px;
+    height: 20px;
+
+}
+
+/* ----------------------------------------------------------*/
+
+/* -----------------  PUSHBAR EXPLORAR   -------------------*/
+
+/* --------------------------------------------------------*/
+
+.pushbar-menu{
+    padding: 30px;
+}
+
+.pushbar-menu a {
+    display: block;
+    text-align: center;
+    color: #AAAAAA;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(112, 112, 112, .60);
+    font-weight: 400;
+    font-size: 21px;
+    transition: .3 ease color;
+}
+
+.pushbar-menu a:hover {
+    color: #ffff;
+}
+
+
+/* ----------------------------------------------------------*/
+
+/* -----------------  BARRA DE BUSQUEDA   -------------------*/
+
+/* --------------------------------------------------------*/
+
+
+.content-search{
+    width: 150%;
+    height: 100vh;
+    position: fixed;
+    top: 51px;
+    background: rgba(0,0,0,0.3);
+    display: none;
+}
+
+.content-table{
+    width: 50%;
+    max-height: 200px;
+    height: auto;
+    background: rgba(0,0,0,0.5);
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+
+.content-table table{
+    width: 100%;
+}
+
+tbody tr td a{
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    z-index: 1000;
+}
+
+tbody tr td a:hover{
+    background: rgba(0,0,0,0.3);
+}
+
+#table_length, #table_filter, #table_info, #table_paginate{
+    display: none;
+}
+
+
+
+

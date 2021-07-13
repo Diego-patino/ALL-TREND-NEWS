@@ -1,0 +1,363 @@
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+
+.grid{
+
+    display: grid;
+    grid-template-columns: 50px 300px;
+    grid-template-rows: 200px 75px;
+
+}
+
+body{
+    font-family: 'Open Sans', 
+    sans-serif;
+}
+
+
+/* ---------------------------------------------------------------*/
+
+/* -----  --------   -------  TITULO   -------  --------  ------*/
+
+/* ------------------------------------------------------------*/
+
+
+.marca{
+    text-align: center;
+    color: white;
+    padding: 15px 10px;
+    font-size: 12px;
+}
+
+.marca h1{
+    padding-right: 4px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#imagen_logo {
+    width: 160px;
+    height: 45px;
+    float: left;
+    padding-left: 20px;
+    padding-right: 16px;
+    padding-top: 2px;
+}
+
+
+.marca {
+    margin: auto;
+    background-color: #ffa837;
+    clear: both;
+    display: block;
+    content: '';
+   
+}
+
+.marca h1 {
+
+    font-size: 70px;
+    line-height: 230px;
+
+}
+
+.marca h1 i {
+
+    font-weight: bold;
+
+}
+
+
+/* ---------------------------------------------------------------------*/
+
+/* --------------------------  NAVEGADOR   ----------------------------*/
+
+/* --------------------------------------------------------------------*/
+
+
+.navegador{
+    float: left;
+    width: 100%;
+    background-color: rgb(255, 152, 93);
+    color: white;
+    transition: .3s ease all;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+
+}
+
+.navegador .wrap {
+    position: relative;
+    left: -196px;
+    transition: 0.4s ease all;
+
+}
+
+
+nav{
+    font-size: 12px;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+
+}
+
+nav li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    
+}
+
+nav a{
+    display: block;
+    padding: 15px;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+    transition: 0.2 ease all;
+}
+
+
+body nav ul li a:hover{
+    color:rgb(255, 152, 93);
+    background-color:rgb(255, 255, 255);
+    transition: all 0.5s ease 0s;
+}
+
+body.nav_fixed .navegador{
+
+    position: fixed;
+    position: 0;
+    z-index:1000;
+    top:0;
+    width: 100%;
+    
+}
+
+body.nav_fixed .navegador .wrap{
+
+    left: 0;
+    
+}
+
+html{
+    background-color: rgb(250, 248, 242, 0.5);
+}
+
+
+/* -----------------------------------------------------------------------*/
+/* ----------------------- CONTENIDO  -----------------------------------*/
+/* -----------------------------------------------------------------------*/
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    padding-top: 60px;
+    gap: 1.6em;
+    background-color: rgb(250, 248, 242);
+    text-align: justify;
+    font-size: 20px;
+}
+
+.container h1 {
+
+    font-size: 70px;
+    padding-bottom: 20px;
+    text-align: center;
+
+}
+
+.container>.content{
+
+    background:white;
+    padding:20px;
+    border: 1px solid black;
+
+}
+
+.container>.header{
+
+    grid-column: 1/-1;
+
+
+}
+
+.content>.article1, .content>.article2, .content>.article3{
+
+    padding: 20px;
+    margin-top: 10px;
+
+}
+
+.row {
+
+    padding-left: 20px;
+    
+    display: grid;
+}
+
+
+/* -----------------------------------------------------------------------*/
+
+/* -----------------------------  FOOTER   ------------------------------*/
+
+/* --------------------------------------------------------------------*/
+
+
+footer{
+    width: 100%;
+    background: #202020;
+    color: white;   
+    margin-top: 20px;
+    
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.colum1{
+    max-width: 400px;
+}
+
+.colum1 h1{
+    font-size: 22px;
+}
+
+.colum1 p{
+    font-size: 14px;
+    color: #C7C7C7;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.colum2{
+    max-width: 400px;
+    
+}
+
+.colum2 h1{
+    font-size: 22px;
+}
+
+.row{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row img{
+    width: 36px;
+    height: 36px;
+}
+
+.row label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #C7C7C7;
+}
+
+.colum3{
+    max-width: 400px;
+}
+
+.colum3 h1{
+    font-size: 22px;
+}
+
+.row2{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row2 img{
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+.container-footer{
+    width: 100%;  
+    background: #101010;
+}
+
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;  
+    padding: 20px;
+}
+
+.copyright{
+    color: #C7C7C7;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.information a{
+    text-decoration: none;
+    color: #C7C7C7;
+}
+
+.text__busqueda input {
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    border: none;
+    background: #F2F2F2;
+    font-size: 19px;
+    outline: none;
+    width:400px;
+    height: 20px;
+
+}
+
+/* ----------------------------------------------------------*/
+
+/* -----------------  PUSHBAR EXPLORAR   -------------------*/
+
+/* --------------------------------------------------------*/
+
+.pushbar-menu{
+    padding: 30px;
+}
+
+.pushbar-menu a {
+    display: block;
+    text-align: center;
+    color: #AAAAAA;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(112, 112, 112, .60);
+    font-weight: 400;
+    font-size: 21px;
+    transition: .3 ease color;
+}
+
+.pushbar-menu a:hover {
+    color: #ffff;
+}
+
