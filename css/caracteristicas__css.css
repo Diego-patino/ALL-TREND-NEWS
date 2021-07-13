@@ -262,8 +262,8 @@ body.nav_fixed2 .navegador .wrap2{
 
 .estrellas__container img{ 
 
-    width: 90%;
-    height: 90%;
+    min-width: 123px;
+    height: 123px;
 
 }
 
