@@ -262,14 +262,12 @@ body.nav_fixed2 .navegador .wrap2{
 
 .estrellas__container img{ 
 
-    min-width: 230px;
-    max-height: 230px;
-    margin-bottom: -110px;
+    width: 90%;
+    height: 90%;
 
 }
 
 .descripcion__container .costo{
-    text-align: center;
     font-size: 50px;
     font-family: monospace;
     color: rgba(61, 58, 58, 0.692);
